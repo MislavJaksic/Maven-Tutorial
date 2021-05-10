@@ -1,5 +1,9 @@
 ## [Running Apache Maven](https://maven.apache.org/run.html)
 
+```
+$: mvn [options] [<goal(s)>] [<phase(s)>]
+```
+
 ### Common invocation
 
 ```
@@ -12,7 +16,7 @@ $: mvn archetype:generate  # invoke plugin goal
 $: mvn checkstyle:check  # invoke plugin goal
 ```
 
-### Life cycles
+### Lifecycles and their phases
 
 ```
 clean - pre-clean, clean, post-clean
