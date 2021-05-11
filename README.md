@@ -17,6 +17,10 @@ IDEs such as Eclipse Java comes with Maven already preinstalled.
 # Note: install Java first
 # Note: install Maven for your OS
 $: mvn -v
+    # Maven home: Maven-Home
+    # Java version:  ...
+    # Default locale:  ...
+    # OS name: ...
 ```
 
 ```
@@ -53,9 +57,17 @@ $: mvn checkstyle:check  # invoke plugin goal
 
 `Repository manager`s manage repositories. They can be local, internal or remote.  
 
-
-
 [Overview](Docs/UserCentre/Repositories)  
+[Using Mirrors for Repositories](Docs/UserCentre/Repositories/MirrorSettings)  
+[Setting up Multiple Repositories](Docs/UserCentre/Repositories/UsingMultipleRepositories)  
+
+### settings.xml
+
+Location:
+* Global: `path/to/Maven-Home/conf/settings.xml`
+* User Profile: `${user.home}/.m2/settings.xml`
+
+[settings.xml Descriptor](Ref/MavenSettings)
 
 ### Install 3rd Party JARs
 
