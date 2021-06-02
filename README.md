@@ -48,7 +48,10 @@ $: mvn checkstyle:check  # invoke plugin goal
 
 ### Configure
 
-`settings.xml` in `USER_HOME/.m2` manages global Maven settings.  
+`settings.xml` manages Maven configuration:
+* Global: `path/to/Maven-Home/conf/settings.xml`
+* User Profile: `${user.home}/.m2/settings.xml`
+
 `pom.xml` manages Maven project specific settings.  
 
 [Overview](AboutMaven/Use/Configure)
@@ -80,3 +83,10 @@ $: mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=<
 ```
 
 [Install 3rd Party JAR](Docs/UserCentre/Repositories/InstallToLocal)  
+
+### Eclipse and Maven `settings.xml`
+
+```
+Window -> Preference -> Maven -> User Settings -> fill out Global Settings
+# Ubuntu: /usr/share/maven/conf/settings.xml
+```
